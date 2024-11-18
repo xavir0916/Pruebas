@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+  /* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%; /* Espaciado adaptable */
+    background-color: #1f1f1f;
+    position: sticky;
+    top: 0;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #9b59b6;
+}
+
+header .logo span {
+    color: #e84393;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap; /* Permite que se ajuste en múltiples líneas */
+    gap: 15px;
+}
+
+header .btn-order {
+    background-color: #9b59b6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+  /* Hero Section */
+.hero {
+    background-image: url(IMG/);
+    display: flex;
+    flex-wrap: wrap; /* Ajuste automático en columnas */
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5%;
+}
+
+.hero-content {
+    flex: 1 1 45%; /* Usa un 45% del ancho, pero se ajusta si hay menos espacio */
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #9b59b6;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #d3d3d3;
+}
+
+.hero-buttons .btn {
+    background-color: #9b59b6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.hero-buttons .btn-secondary {
+    background-color: #6c5ce7;
+}
+
+.hero-image {
+    flex: 1 1 45%; /* Igual proporción que el contenido */
+    max-width: 500px;
+    text-align: center; /* Centra la imagen en espacios pequeños */
+}
+
+.hero-image img {
+    max-width: 100%; /* La imagen se adapta al contenedor */
+    height: auto;
+}
+
+  /* Categories */
+.categories {
+    text-align: center;
+    padding: 40px 5%;
+    background-color: #1e1e1e;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.categories h2 {
+    font-size: 30px;
+    color: #9b59b6;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.category-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite ajustar elementos en varias filas */
+    justify-content: center; /* Centra las categorías */
+    gap: 150px;
+}
+
+.category {
+    flex: 1 1 calc(25% - 20px); /* Cuatro elementos por fila, con espacio */
+    max-width: 200px; /* Tamaño máximo */
+    text-align: center;
+}
+
+.category h3 {
+    margin-left: 45px;
+}
+
+.category img {
+    border-radius: 50%; /* Mantén esto si deseas imágenes redondeadas */
+    max-width: 250px; /* Cambia el tamaño máximo del ancho */
+    height: 250px; /* Define una altura fija */
+    object-fit: cover; /* Asegura que la imagen mantenga proporciones al recortarse */
+}
+
+  /* Offers */
+.offers {
+    padding: 40px 5%;
+    background-color: #121212;
+}
+
+.offers h2 {
+    color: #9b59b6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.offer-cards {
+    display: flex;
+    flex-wrap: wrap; /* Ajusta las tarjetas en múltiples líneas */
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 calc(50% - 20px); /* Dos tarjetas por fila */
+    max-width: 300px; /* Límite de ancho */
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+    border-radius: 10px;
+    max-width: 100%; /* Ajusta la imagen al contenedor */
+}
+
+.card h3 {
+    color: #9b59b6;
+    margin: 10px 0;
+}
+
+  /* Footer */
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 20px 5%;
+    color: white;
+}
+
+footer .social-icons a {
+    color: #9b59b6;
+    margin: 0 10px;
+}
